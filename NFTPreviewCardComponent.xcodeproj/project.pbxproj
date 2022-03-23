@@ -13,6 +13,7 @@
 		9060DDF327EAC4430043AD01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060DDE127EAC4420043AD01 /* ContentView.swift */; };
 		9060DDF427EAC4430043AD01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9060DDE227EAC4430043AD01 /* Assets.xcassets */; };
 		9060DDF527EAC4430043AD01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9060DDE227EAC4430043AD01 /* Assets.xcassets */; };
+		9060DE0027EAC4AA0043AD01 /* Outfit.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9060DDFF27EAC4AA0043AD01 /* Outfit.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		9060DDE727EAC4430043AD01 /* NFTPreviewCardComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFTPreviewCardComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9060DDED27EAC4430043AD01 /* NFTPreviewCardComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFTPreviewCardComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9060DDEF27EAC4430043AD01 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		9060DDFF27EAC4AA0043AD01 /* Outfit.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Outfit.ttf; sourceTree = "<group>"; };
+		9060DE0127EAC4C80043AD01 /* NFTPreviewCardComponent--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "NFTPreviewCardComponent--iOS--Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +48,7 @@
 		9060DDDA27EAC4420043AD01 = {
 			isa = PBXGroup;
 			children = (
+				9060DE0127EAC4C80043AD01 /* NFTPreviewCardComponent--iOS--Info.plist */,
 				9060DDDF27EAC4420043AD01 /* Shared */,
 				9060DDEE27EAC4430043AD01 /* macOS */,
 				9060DDE827EAC4430043AD01 /* Products */,
@@ -54,6 +58,7 @@
 		9060DDDF27EAC4420043AD01 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9060DDFE27EAC49E0043AD01 /* Fonts */,
 				9060DDE027EAC4420043AD01 /* NFTPreviewCardComponentApp.swift */,
 				9060DDE127EAC4420043AD01 /* ContentView.swift */,
 				9060DDE227EAC4430043AD01 /* Assets.xcassets */,
@@ -76,6 +81,14 @@
 				9060DDEF27EAC4430043AD01 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		9060DDFE27EAC49E0043AD01 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9060DDFF27EAC4AA0043AD01 /* Outfit.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9060DDF427EAC4430043AD01 /* Assets.xcassets in Resources */,
+				9060DE0027EAC4AA0043AD01 /* Outfit.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +257,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -295,6 +311,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -312,6 +330,7 @@
 				DEVELOPMENT_TEAM = 862P2X6G9G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NFTPreviewCardComponent--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,6 +361,7 @@
 				DEVELOPMENT_TEAM = 862P2X6G9G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NFTPreviewCardComponent--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
