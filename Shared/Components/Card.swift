@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Card: View {
+    @State private var isActive: Bool = false
     var body: some View {
         ZStack {
             Color("CardColor")
@@ -23,6 +24,12 @@ struct Card: View {
                     .foregroundColor(.white)
                     .font(.custom("Outfit", size: 27))
                     .fontWeight(.bold)
+                    .colorMultiply(isActive ? Color("AccentColor") : .white)
+                    .onTapGesture {
+                        withAnimation(.easeInOut(duration: 0.3)) {
+                            isActive.toggle()
+                        }
+                    }
                 Spacer()
                     .frame(height: 20)
                 Text("Our Equilibrium collection promotes balance and calm.")
