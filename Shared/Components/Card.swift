@@ -30,6 +30,23 @@ struct Card: View {
                     .foregroundColor(Color("BodyColor"))
                     .fontWeight(.light)
                     .lineSpacing(5)
+                Spacer()
+                    .frame(height: 20)
+                HStack {
+                    HStack {
+                        Image("Ethereum")
+                            .resizable()
+                            .frame(width: 11, height: 18)
+                        Text("0.041ETH")
+                            .font(.custom("Outfit", size: 18))
+                            .foregroundColor(Color("AccentColor"))
+                            .fontWeight(.bold)
+                            .tracking(1)
+                    }
+                    HStack {
+
+                    }
+                }
             }
             .padding(30)
         }
