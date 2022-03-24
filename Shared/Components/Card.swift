@@ -53,6 +53,20 @@ struct Card: View {
                             .foregroundColor(Color("BodyColor"))
                     }
                 }
+                Group {
+                    Spacer()
+                        .frame(height: 20)
+                    Divider()
+                        .background(Color("BodyColor"))
+                    Spacer()
+                        .frame(height: 20)
+                    HStack {
+                        Image("Avatar")
+                            .overlay(Circle()
+                                .stroke()
+                                .foregroundColor(.white))
+                    }
+                }
             }
             .padding(30)
         }
