@@ -32,7 +32,7 @@ struct Card: View {
                     .lineSpacing(5)
                 Spacer()
                     .frame(height: 20)
-                HStack {
+                HStack(alignment: .center) {
                     HStack {
                         Image("Ethereum")
                             .resizable()
@@ -43,8 +43,14 @@ struct Card: View {
                             .fontWeight(.bold)
                             .tracking(1)
                     }
+                    Spacer()
                     HStack {
-
+                        Image("Clock")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                        Text("3 days left")
+                            .font(.custom("Outfit", size: 18))
+                            .foregroundColor(Color("BodyColor"))
                     }
                 }
             }
