@@ -46,6 +46,7 @@ struct Card: View {
                     .foregroundColor(Color("BodyColor"))
                     .fontWeight(.light)
                     .lineSpacing(5)
+                    .fixedSize(horizontal: false, vertical: true)
                 Spacer()
                     .frame(height: 20)
                 HStack(alignment: .center) {
@@ -99,6 +100,7 @@ struct Card: View {
                 }
             }
             .padding(30)
+            .scaledToFit()
         }
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .padding(.horizontal, 30)
