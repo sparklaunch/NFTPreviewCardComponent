@@ -18,6 +18,15 @@ struct Card: View {
                     .aspectRatio(contentMode: .fill)
                     .clipShape(RoundedRectangle(cornerRadius: 15))
                     .shadow(radius: 5)
+                    .overlay(isActive ? Image("View")
+                        .resizable()
+                        .frame(width: 48, height: 48) : nil)
+                    .colorMultiply(isActive ? Color("AccentColor") : .white)
+                    .onTapGesture {
+                        withAnimation(.easeInOut(duration: 0.3)) {
+                            isActive.toggle()
+                        }
+                    }
                 Spacer()
                     .frame(height: 30)
                 Text("Equilibrium #3429")
@@ -67,19 +76,25 @@ struct Card: View {
                         .background(Color("BodyColor"))
                     Spacer()
                         .frame(height: 20)
-                    HStack {
+                    HStack(spacing: 0) {
                         Image("Avatar")
                             .overlay(Circle()
                                 .stroke()
                                 .foregroundColor(.white))
                         Spacer()
                             .frame(width: 18)
-                        Group {
-                            Text("Creation of ")
-                                .foregroundColor(Color("BodyColor")) + Text("Jules Wyvern")
-                                .foregroundColor(.white)
-                        }
-                        .font(.custom("Outfit", size: 16))
+                        Text("Creation of ")
+                            .font(.custom("Outfit", size: 16))
+                            .foregroundColor(Color("BodyColor"))
+                        Text("Jules Wyvern")
+                            .font(.custom("Outfit", size: 16))
+                            .foregroundColor(.white)
+                            .colorMultiply(isActive ? Color("AccentColor") : .white)
+                            .onTapGesture {
+                                withAnimation(.easeInOut(duration: 0.3)) {
+                                    isActive.toggle()
+                                }
+                            }
                     }
                 }
             }
