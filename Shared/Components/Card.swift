@@ -65,6 +65,14 @@ struct Card: View {
                             .overlay(Circle()
                                 .stroke()
                                 .foregroundColor(.white))
+                        Spacer()
+                            .frame(width: 18)
+                        Group {
+                            Text("Creation of ")
+                                .foregroundColor(Color("BodyColor")) + Text("Jules Wyvern")
+                                .foregroundColor(.white)
+                        }
+                        .font(.custom("Outfit", size: 16))
                     }
                 }
             }
