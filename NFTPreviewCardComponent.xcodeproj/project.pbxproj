@@ -14,6 +14,7 @@
 		9060DDF427EAC4430043AD01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9060DDE227EAC4430043AD01 /* Assets.xcassets */; };
 		9060DDF527EAC4430043AD01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9060DDE227EAC4430043AD01 /* Assets.xcassets */; };
 		9060DE0027EAC4AA0043AD01 /* Outfit.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9060DDFF27EAC4AA0043AD01 /* Outfit.ttf */; };
+		9060DE0427EC01CA0043AD01 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9060DE0327EC01CA0043AD01 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		9060DDEF27EAC4430043AD01 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		9060DDFF27EAC4AA0043AD01 /* Outfit.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Outfit.ttf; sourceTree = "<group>"; };
 		9060DE0127EAC4C80043AD01 /* NFTPreviewCardComponent--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "NFTPreviewCardComponent--iOS--Info.plist"; sourceTree = "<group>"; };
+		9060DE0327EC01CA0043AD01 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		9060DDDF27EAC4420043AD01 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9060DE0227EAC97E0043AD01 /* Components */,
 				9060DDFE27EAC49E0043AD01 /* Fonts */,
 				9060DDE027EAC4420043AD01 /* NFTPreviewCardComponentApp.swift */,
 				9060DDE127EAC4420043AD01 /* ContentView.swift */,
@@ -89,6 +92,14 @@
 				9060DDFF27EAC4AA0043AD01 /* Outfit.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9060DE0227EAC97E0043AD01 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9060DE0327EC01CA0043AD01 /* Card.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9060DDF227EAC4430043AD01 /* ContentView.swift in Sources */,
+				9060DE0427EC01CA0043AD01 /* Card.swift in Sources */,
 				9060DDF027EAC4430043AD01 /* NFTPreviewCardComponentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
